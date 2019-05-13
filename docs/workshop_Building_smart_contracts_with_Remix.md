@@ -5,7 +5,7 @@ We prepared a tutorial that will help you build DApps with Remix. In this tutori
 
 ### Let's get started
 
-This tutorial was used in workshops at ethCC, Edcon, and DappCon. 
+These tutorials were used in workshops at ethCC, Edcon, and DappCon. They are using the old interface.  We will be updating these slides in the near future.
 
 You can [watch the Edcon presentation talk](https://www.youtube.com/watch?v=nAI_Cr5Y8JY) and here are the [workshop slides](https://slides.com/ninabreznik/deck-11-13#/).
 (May 3, 2018)

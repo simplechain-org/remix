@@ -76,12 +76,20 @@ Useful links:
    tutorial_eattheblock
    tutorial_debug
    tutorial_import
-   tutorial_mist
+   tutorial_geth-remix
 
 .. toctree::
    :maxdepth: 2
    :caption: Code contribution guide
 
    code_contribution_guide
-   Community
-   support_tab
+   community
+   support
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Building Plugins
+
+   remix_plugin.md
+   remix_plugin_api.md
+

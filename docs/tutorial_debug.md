@@ -15,7 +15,8 @@ a different use case.
 We will not explain in detail here how to write or deploy contract. Let
 us start with a basic contract (replace this one by your's):
 
-``` {.sourceCode .none}
+``` 
+{.sourceCode .none}
 contract Donation {
     address owner;
     event fundMoved(address _to, uint _amount);
@@ -189,7 +190,8 @@ variable, it might be triggered twice: Once for initializing the
 variable to zero and second time for assigning the actual value. As an
 example, assume you are debugging the following contract:
 
-``` {.sourceCode .none}
+``` 
+{.sourceCode .none}
 contract ctr {
     function hid () {
         uint p = 45;

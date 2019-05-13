@@ -6,7 +6,7 @@ changed or another file is selected. If the contract has a lot of
 dependencies and takes a long time to compile, it is possible to disable
 the autocompilation.
 
-![image](images/remix_compiletab.png)
+![](images/a-sol-compiler.png)
 
 After each compilation, a list is updated with all the newly compiled
 contracts.

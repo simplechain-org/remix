@@ -26,28 +26,31 @@ should have 100 ether.
 Sample contract
 ---------------
 
-``` {.sourceCode .none}
-pragma solidity ^0.4.16;
+``` 
+{.sourceCode .none}
+pragma solidity ^0.5.1;
 
 contract testContract {
 
     uint value;
-    function testContract(uint _p) {
+
+    constructor (uint _p) public {
         value = _p;
     }
 
-    function setP(uint _n) payable {
+    function setP(uint _n) payable public {
         value = _n;
     }
 
-    function setNP(uint _n) {
+    function setNP(uint _n) public {
         value = _n;
     }
 
-    function get () constant returns (uint) {
+    function get () view public returns (uint) {
         return value;
     }
 }
+
 ```
 
 This contract is very basic. The goal is to quickly start to create and
@@ -63,12 +66,12 @@ Moving on, in the `Run tab` select, `JavaScript VM` to specify that you
 are going to deploy an instance of the contract in the `JavaScript VM`
 state.
 
-![image](images/remix_quickstart_javascriptvm_creation.png)
+![](images/a-jvm.png)
 
-The constructor of `testContract` needs a parameter (of type `uint`).
-Give any value and click on `Create`.
+The constructor of `Ballot.sol` needs a parameter (of type `uint8`).
+Give any value and click on `Deploy`.
 
-The transaction which deploys the instance of `testContract` is created.
+The transaction which deploys the instance of `Ballot` is created.
 
 In a "normal" blockchain, it can take several seconds to execute. This
 is the time for the transaction to be mined. However, because we are
@@ -79,7 +82,7 @@ there and start debugging.
 
 The newly created instance is displayed in the `run tab`.
 
-![image](images/remix_quickstart_javascriptvm_creationTransaction.png)
+![](images/a-jvm-instance.png)
 
 Interacting with an instance
 ----------------------------
@@ -88,17 +91,16 @@ This new instance contains 3 actions which corresponds to the 3
 functions (`setP`, `setPN`, `get`). Clicking on `SetP` or `SetPN` will
 create a new transaction.
 
-Note that `SetP` is `payable` (red action) : it is possible to send
+Note that `SetP` is `payable` (red button) : it is possible to send
 value (Ether) to the contract.
 
-`SetPN` is not payable (light red action) : it is not possible to send
+`SetPN` is not payable (orange button - depending on the theme) : it is not possible to send
 value (Ether) to the contract.
 
-Clicking on `get` will not execute a transaction (blue action). It is
-not necessary to do so because `get` does not modify the state (variable
+Clicking on `get` will not execute a transaction (usually its a blue button - depending on the theme). It doesn't execute a transaction because a `get` does not modify the state (variable
 `value`) of this instance.
 
-As `get` is `constant` you can see the return value just below the
+As `get` is `view` you can see the return value just below the
 action.
 
-![image](images/remix_quickstart_javascriptvm_callinginstance.png)
+![](images/a-jvm-calling-instance.png)

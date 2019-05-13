@@ -4,9 +4,12 @@ Debugging
 This module allows you to debug the transaction. It can be used to
 deploy transactions created from Remix and already mined transactions.
 (debugging works only if the current environment provides the necessary
-features).
+features).  
 
-![image](images/remix_debuggertab.png)
+To get to the debugger - you can click the debug button in the terminal when a successful or failed transaction appears there.  You can also load the module from the plugin manager and then click the bug in the icon panel.  Or you can get to the debugger by running the debug command in the console. 
+
+
+![](images/a-debugger.png)
 
 For more information about debugging, see the [Tutorial on debugging transactions with Remix
 ](http://remix.readthedocs.io/en/latest/tutorial_debug.html)
