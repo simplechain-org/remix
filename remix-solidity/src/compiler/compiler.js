@@ -7,7 +7,7 @@ var webworkify = require('webworkify')
 
 var compilerInput = require('./compiler-input')
 
-var remixLib = require('remix-lib')
+var remixLib = require('remix-lib-sipc')
 var EventManager = remixLib.EventManager
 
 var txHelper = require('./txHelper')
@@ -73,7 +73,7 @@ function Compiler (handleImportCall) {
   function onInternalCompilerLoaded () {
     if (worker === null) {
       var compiler
-      var userAgent = (typeof (navigator) !== 'undefined') && navigator.userAgent ? navigator.userAgent.toLowerCase() : '-'
+      // var userAgent = (typeof (navigator) !== 'undefined') && navigator.userAgent ? navigator.userAgent.toLowerCase() : '-'
       if (typeof (window) === 'undefined') {
         compiler = require('solc')
       } else {

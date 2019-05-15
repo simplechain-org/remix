@@ -1,7 +1,7 @@
 {
-  "name": "remix-solidity",
-  "version": "0.3.6",
-  "description": "Ethereum IDE and tools for the web",
+  "name": "remix-solidity-sipc",
+  "version": "0.3.6-sipc",
+  "description": "Simplechain IDE and tools for the web",
   "contributors": [
     {
       "name": "Yann Levreau",
@@ -15,9 +15,9 @@
   "main": "./index.js",
   "dependencies": {
     "ethereumjs-util": "^4.5.0",
-    "ethereumjs-vm": "3.0.0",
+    "simplechainjs-vm": "^2.6.0-sipc",
     "fast-async": "^6.1.2",
-    "remix-lib": "0.4.6",
+    "remix-lib-sipc": "0.4.6-sipc",
     "solc": "^0.5.0",
     "webworkify": "^1.2.1"
   },
@@ -40,14 +40,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereum/remix.git"
+    "url": "git+https://github.com/simplechain-org/remix.git"
   },
   "author": "cpp-ethereum team",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ethereum/remix/issues"
-  },
-  "homepage": "https://github.com/ethereum/remix#readme",
+  "homepage": "https://github.com/simplechain-org/remix#readme",
   "browserify": {
     "transform": [
       [
