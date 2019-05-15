@@ -51,7 +51,7 @@ module.exports = {
       if (ethutil.BN.isBN(v)) {
         ret.push('0x' + v.toString('hex', 64))
       } else {
-        ret.push('0x' + (new ethutil.BN(v)).toString('hex', 64)) // TEMP FIX TO REMOVE ONCE https://github.com/ethereumjs/ethereumjs-vm/pull/293 is released
+        ret.push('0x' + (new ethutil.BN(v)).toString('hex', 64)) // TEMP FIX TO REMOVE ONCE https://github.com/ethereumjs/simplechainjs-vm/pull/293 is released
       }
     }
     return ret
