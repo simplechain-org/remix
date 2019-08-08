@@ -21,8 +21,8 @@
     "ethereumjs-vm": "2.6.0",
     "ethers": "^4.0.27",
     "fast-async": "^6.1.2",
-    "simplechainjs-util": "6.1.2-sipc",
-    "simplechainjs-vm": "2.6.5-sipc",
+    "simplechainjs-util": "^6.1.2-sipc",
+    "simplechainjs-vm": "^2.6.5-sipc.1",
     "solc": "^0.5.0",
     "web3": "0.20.6"
   },

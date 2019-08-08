@@ -89,9 +89,9 @@ async@^2.0.1, async@^2.1.2, async@^2.4.0:
   dependencies:
     lodash "^4.17.11"
 
-"axlsign@github:wavesplatform/curve25519-js":
+axlsign@^1.0.0:
   version "1.0.0"
-  resolved "https://codeload.github.com/wavesplatform/curve25519-js/tar.gz/cae68782564b83ffa1c7c757e40a3944cb140290"
+  resolved "https://registry.yarnpkg.com/axlsign/-/axlsign-1.0.0.tgz#fd0fa31cbf2835c9572ead5d372f1c41b7fcbd20"
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -767,10 +767,6 @@ bindings@^1.2.1, bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-bindings@~1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.2.1.tgz#14ad6113812d2d37d72e67b4cacb4bb726505f11"
-
 bip66@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/bip66/-/bip66-1.1.5.tgz#01fa8748785ca70955d5011217d1b3139969ca22"
@@ -956,13 +952,6 @@ cross-spawn@^5.0.1:
 crypto-js@^3.1.4:
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.1.8.tgz#715f070bf6014f2ae992a98b3929258b713f08d5"
-
-curve25519-n2@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/curve25519-n2/-/curve25519-n2-1.1.3.tgz#4cb0588ecfb7dbbc0bfb32d0a00463296ee6efe2"
-  dependencies:
-    bindings "~1.2.1"
-    nan "^2.0.9"
 
 d@1:
   version "1.0.0"
@@ -1940,7 +1929,7 @@ mute-stream@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
 
-nan@^2.0.9, nan@^2.13.2, nan@^2.2.1:
+nan@^2.13.2, nan@^2.2.1:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
 
@@ -2237,7 +2226,7 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rlp@^2.0.0, rlp@^2.2.3:
+rlp@^2.0.0:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/rlp/-/rlp-2.2.3.tgz#7f94aef86cec412df87d5ea1d8cb116a47d45f0e"
   dependencies:
@@ -2328,34 +2317,22 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-simplechainjs-util@6.1.1-sipc:
-  version "6.1.1-sipc"
-  resolved "https://registry.yarnpkg.com/simplechainjs-util/-/simplechainjs-util-6.1.1-sipc.tgz#053a219d3cde6e626ee5f1295b0d6a0b225ce5f5"
+simplechainjs-util@^6.1.2-sipc:
+  version "6.1.2-sipc"
+  resolved "https://registry.yarnpkg.com/simplechainjs-util/-/simplechainjs-util-6.1.2-sipc.tgz#75eb4f85187b6dff4ee4b2c827ed974ca3cd6d0b"
   dependencies:
-    axlsign "github:wavesplatform/curve25519-js"
-    bn.js "^4.11.0"
-    create-hash "^1.1.2"
-    curve25519-n2 "^1.1.3"
-    ethjs-util "0.1.6"
-    keccak "^1.0.2"
-    rlp "^2.2.3"
-    secp256k1 "^3.0.1"
-
-simplechainjs-util@^6.1.0-sipc:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/simplechainjs-util/-/simplechainjs-util-6.1.0.tgz#7cd1a911d2dba2bdbdf55818a3ba5ddc5fb98fde"
-  dependencies:
-    axlsign "github:wavesplatform/curve25519-js"
+    axlsign "^1.0.0"
     bn.js "^4.11.0"
     create-hash "^1.1.2"
     ethjs-util "0.1.6"
     keccak "^1.0.2"
-    rlp "^2.2.3"
+    rlp "^2.0.0"
+    safe-buffer "^5.1.1"
     secp256k1 "^3.0.1"
 
-simplechainjs-vm@2.6.0-sipc:
-  version "2.6.0-sipc"
-  resolved "https://registry.yarnpkg.com/simplechainjs-vm/-/simplechainjs-vm-2.6.0-sipc.tgz#15060c168026d259449f4a40b10d8d8ee34b30bc"
+simplechainjs-vm@^2.6.5-sipc.1:
+  version "2.6.5-sipc.1"
+  resolved "https://registry.yarnpkg.com/simplechainjs-vm/-/simplechainjs-vm-2.6.5-sipc.1.tgz#d91a13e41159c30face3340aefe3595bcf906cdb"
   dependencies:
     async "^2.1.2"
     async-eventemitter "^0.2.2"
@@ -2367,7 +2344,7 @@ simplechainjs-vm@2.6.0-sipc:
     merkle-patricia-tree "^2.3.2"
     rustbn.js "~0.2.0"
     safe-buffer "^5.1.1"
-    simplechainjs-util "^6.1.0-sipc"
+    simplechainjs-util "^6.1.2-sipc"
 
 slash@^1.0.0:
   version "1.0.0"
